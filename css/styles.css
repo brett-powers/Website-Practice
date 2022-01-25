@@ -14,6 +14,33 @@ body {
 html {
   font-size: 62.5%;
 }
+/*Buttons*/
+.btn {
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  height: 45px;
+  text-transform: uppercase;
+  width: 150px;
+}
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn--primary:hover {
+  background: var(--color-secondary);
+}
+.btn--secondary {
+  background: var(--color-white);
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+.btn--secondary:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
 /*Lists*/
 .list {
   list-style: none;
@@ -127,4 +154,5 @@ a {
 }
 .hero__sale {
   font-size: 1.7rem;
+  margin-bottom: 3rem;
 }
