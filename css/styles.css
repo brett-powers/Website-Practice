@@ -9,6 +9,7 @@
 body {
   font-family: poppins, Arial, Helvetica, sans-serif;
   height: 200vh;
+  margin: 84px 0;
 }
 html {
   font-size: 62.5%;
@@ -97,4 +98,33 @@ a {
     color: var(--color-secondary);
     padding-left: 30px;
   }
+}
+/*Hero*/
+.hero__img {
+  background: 50% 50% url(../images/necklace.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 460px;
+}
+.hero__container {
+  margin-top: 130px;
+}
+.hero__trend,
+.hero__sale {
+  text-transform: uppercase;
+}
+.hero__trend {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+.hero__collection {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin: 1.5rem 0;
+}
+.hero__sale {
+  font-size: 1.7rem;
 }
