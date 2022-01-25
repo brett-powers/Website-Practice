@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #f02222;
+  --color-secondary: #292727;
+  --color-background-light: #f2f2f2;
+  --color-white: #fff;
+  --color-black: #000;
+}
+/*Typography*/
+body {
+  font-family: poppins, Arial, Helvetica, sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
