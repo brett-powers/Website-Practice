@@ -41,6 +41,10 @@ html {
   background: var(--color-primary);
   color: var(--color-white);
 }
+/*Layout*/
+main {
+  margin: 0 15px;
+}
 /*Lists*/
 .list {
   list-style: none;
@@ -183,4 +187,37 @@ a {
   .hero__container {
     margin-top: 250px;
   }
+}
+/*Feature*/
+.feature {
+  margin-top: 50px;
+}
+.feature__mens,
+.feature__kids,
+.feature__accessories,
+.feature__womens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature__mens,
+.feature__womens {
+  height: 600px;
+}
+.feature__kids,
+.feature__accessories {
+  height: 300px;
+  margin: 20px 0;
+}
+.feature__mens {
+  background: 50% 50% url(../images/Mens.jpg) no-repeat;
+}
+.feature__kids {
+  background: 50% 50% url(../images/kids.jpg) no-repeat;
+}
+.feature__accessories {
+  background: 50% 50% url(../images/accessories.jpg) no-repeat;
+}
+.feature__womens {
+  background: 50% 50% url(../images/people-4.jpg) no-repeat;
 }
