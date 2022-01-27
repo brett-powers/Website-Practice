@@ -40,7 +40,27 @@ html {
   background: var(--color-primary);
   color: var(--color-white);
 }
-/*Grids*/
+/*Card Colors*/
+.color--red,
+.color--green,
+.color--black {
+  border-radius: 7px;
+  cursor: pointer;
+  display: inline-block;
+  height: 14px;
+  margin-left: 10px;
+  width: 14px;
+}
+.color--red {
+  background: var(--color-primary);
+}
+.color--green {
+  background: #6aba38;
+}
+.color--black {
+  background: var(--color-black);
+}
+/*Grid*/
 .grid {
   display: grid;
   justify-content: center;
@@ -297,4 +317,65 @@ a {
   .feature__accessories {
     height: 250px;
   }
+}
+/*Product-Cards*/
+.card {
+  height: 430px;
+  width: 200px;
+  transition: box-shadow 0.3s;
+}
+.card:hover {
+  box-shadow: 0 0 20px 5px #7c7c7c;
+}
+.card__header {
+  align-items: center;
+  display: flex;
+  height: 40px;
+}
+.card__new,
+.card__sale {
+  color: var(--color-white);
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-left: 20px;
+  padding: 5px 20px;
+}
+.card__sale {
+  background: var(--color-primary);
+}
+.card__new {
+  background: #6aba38;
+}
+.card__body {
+  margin: 0 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.card__img {
+  height: 150px;
+  width: 100%;
+}
+.card__text {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  line-height: 2.5rem;
+}
+.card__price {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+.card__footer {
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+}
+.card__btn {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s, background 0.3s;
+}
+.card:hover .card__btn {
+  opacity: 1;
 }
