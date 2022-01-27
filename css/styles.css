@@ -17,7 +17,7 @@ html {
 main {
   margin: 0 15px;
 }
-h4 {
+h2 {
   color: var(--color-secondary);
   font-size: 3.4rem;
   font-weight: 500;
@@ -205,6 +205,7 @@ a {
 .hero__sale {
   font-size: 1.7rem;
   margin-bottom: 3rem;
+  font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .hero__img {
