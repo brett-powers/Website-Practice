@@ -414,3 +414,36 @@ a {
     justify-content: space-evenly;
   }
 }
+/*Spotlight*/
+.spotLight {
+  align-items: center;
+  background: var(--color-background-light);
+  display: flex;
+  height: 400px;
+  justify-content: center;
+}
+.spotLight__container {
+  text-align: center;
+}
+.spotLight__trend {
+  font-size: 2.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.spotLight__collection {
+  color: var(--color-secondary);
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 7rem;
+  margin: 1rem 0 0;
+}
+.spotLight__sale {
+  color: #4e4d4d;
+  font-size: 1.8rem;
+  margin: 1.5rem 0 5rem;
+}
+@media screen and (min-width: 575px) {
+  .collection {
+    display: inline;
+  }
+}
