@@ -467,6 +467,11 @@ a {
   background: var(--color-primary);
   color: var(--color-white);
 }
+.sale__grid {
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
 @media screen and (min-width: 768px) {
   .sale__list {
     display: flex;
@@ -475,5 +480,11 @@ a {
   .sale__item {
     margin-left: -1px;
     width: 110px;
+  }
+}
+@media screen and (min-width: 975px) {
+  .sale__grid {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
