@@ -535,3 +535,39 @@ a {
     margin-left: 2rem;
   }
 }
+/*Latest*/
+.latest__img-container {
+  margin-top: 30px;
+}
+.latest__img-1 {
+  background: 50% 50% url(../images/people-1.jpg) no-repeat;
+  height: 350px;
+  width: 452px;
+}
+@media screen and (min-width: 600px) {
+  .latest__img-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .latest__img-1,
+  .latest__img-2 {
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+  }
+  .latest__img-2 {
+    background: 50% 40% url(../images/people-2.jpg) no-repeat;
+  }
+}
+@media screen and (min-width: 975px) {
+  .latest__img-1,
+  .latest__img-2,
+  .latest__img-3 {
+    height: 300px;
+    width: 350px;
+  }
+  .latest__img-3 {
+    background: 50% 50% url(../images/people-3.jpg) no-repeat;
+  }
+}
