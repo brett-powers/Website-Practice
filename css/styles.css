@@ -488,3 +488,50 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+/*Offers*/
+.offer {
+  margin-top: 50px;
+  background: var(--color-background-light);
+  text-align: center;
+  height: 475px;
+}
+.offer__grid {
+  grid-template-rows: repeat(4, 0.3fr);
+  align-content: center;
+  align-items: center;
+}
+.offer__icon {
+  font-size: 2.3rem;
+  color: var(--color-primary);
+}
+.offer__header {
+  cursor: pointer;
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0.8rem 0;
+  transition: color 0.3s;
+}
+.offer__header:hover {
+  color: var(--color-primary);
+}
+.offer__text {
+  font-size: 1.4rem;
+  color: #4e4d4d;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .offer {
+    height: 200px;
+  }
+  .offer__grid {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .offer__container:first-of-type {
+    margin-left: 0;
+  }
+  .offer__container {
+    margin-left: 2rem;
+  }
+}
