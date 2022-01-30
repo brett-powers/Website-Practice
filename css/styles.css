@@ -572,10 +572,24 @@ a {
   }
 }
 /*Newsletter*/
+.newsLetter {
+  background: var(--color-background-light);
+  height: 250px;
+  margin-top: 50px;
+}
+.newsLetter__header {
+  font-size: 2.3rem;
+  color: var(--color-secondary);
+  font-weight: 500;
+  padding: 4rem 0;
+}
+.newsLetter__header,
+.input-group {
+  margin: 0 15px;
+}
 .input-group {
   display: flex;
   justify-content: space-between;
-  margin: 0 10px;
 }
 .newsLetter__input {
   border: none;
@@ -587,4 +601,17 @@ a {
 }
 .newsLetter__input:focus {
   border: 1px solid var(--color-primary);
+}
+.newsLetter__list {
+  display: flex;
+  font-size: 15px;
+  gap: 20px;
+  margin-top: 4rem;
+}
+.newsLetter__icon > a {
+  color: var(--color-secondary);
+  transition: color 0.3s;
+}
+.newsLetter__icon > a:hover {
+  color: var(--color-primary);
 }
