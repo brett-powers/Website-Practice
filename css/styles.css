@@ -571,3 +571,20 @@ a {
     background: 50% 50% url(../images/people-3.jpg) no-repeat;
   }
 }
+/*Newsletter*/
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+.newsLetter__input {
+  border: none;
+  font-size: 1.3rem;
+  outline: none;
+  padding-left: 15px;
+  transition: border 0.3s;
+  width: 100%;
+}
+.newsLetter__input:focus {
+  border: 1px solid var(--color-primary);
+}
