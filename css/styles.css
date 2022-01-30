@@ -8,7 +8,7 @@
 /*Typography*/
 body {
   font-family: poppins, Arial, Helvetica, sans-serif;
-  margin: 84px 0;
+  margin-top: 84px;
 }
 html {
   font-size: 62.5%;
@@ -655,5 +655,44 @@ a {
   }
   .input-group {
     width: 500px;
+  }
+}
+/*Footer-Copyright*/
+.footer__list {
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+.footer__item {
+  font-size: 1.5rem;
+}
+.footer__item > a {
+  color: var(--color-secondary);
+  transition: color 0.3s;
+}
+.footer__item > a:hover {
+  color: var(--color-primary);
+}
+.copyright {
+  border-top: 1px solid var(--color-background-light);
+  text-align: center;
+}
+.copyright__text {
+  font-size: 1.5rem;
+  color: #a09e9e;
+}
+.copyright__singleWord {
+  color: var(--color-black);
+}
+@media screen and (min-width: 600px) {
+  .footer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
